@@ -138,7 +138,7 @@ MIT
 
 #### GitHub URL: https://github.com/min-hinthar
 
-#### GitHub Repo: https://github.com/min-hinthar/property_agency_management_dashboard_mern_app
+#### GitHub Repo: https://github.com/min-hinthar/property_management_dashboard_mern_app
 
 #### Email: min@mandalaymorningstar.com
 
