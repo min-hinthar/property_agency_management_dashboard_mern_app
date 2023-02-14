@@ -379,7 +379,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
         </Drawer>
         <Drawer
           variant="permanent"
-          PaperProps={{ elevation: 0 }}
+          PaperProps={{ elevation: 3 }}
           sx={{
             display: { xs: "none", md: "block" },
             "& .MuiDrawer-paper": {
