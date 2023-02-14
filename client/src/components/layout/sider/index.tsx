@@ -178,7 +178,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
                 py: isNested ? 1.25 : 1,
                 "&.Mui-selected": {
                   "&:hover": {
-                    backgroundColor: isSelected ? '#5d40a8' :"transparent",
+                    backgroundColor: isSelected ? '#5B0768' :"transparent",
                   },
                   backgroundColor: isSelected ? '#310438' : "transparent",
                 },
@@ -361,7 +361,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
             display: { sm: "block", md: "none" },
             "& .MuiDrawer-paper": {
               width: 256,
-              bgcolor: "secondary.main",
+              bgcolor: "#C70039",
             },
           }}
         >
@@ -418,7 +418,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
               borderRadius: 0,
               borderTop: "1px solid #ffffff1a",
               '&:hover': {
-                background: '#5d40a8'
+                background: '#5B0768'
               }
             }}
             fullWidth
@@ -435,9 +435,9 @@ export const Sider: typeof DefaultSider = ({ render }) => {
             top: "64px",
             left: "0px",
             borderRadius: "0 6px 6px 0",
-            bgcolor: "#5d40a8",
+            bgcolor: "#5B0768",
             zIndex: 1199,
-            width: "36px",
+            width: "40px",
           }}
         >
           <IconButton
