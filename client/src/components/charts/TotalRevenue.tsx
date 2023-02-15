@@ -19,7 +19,7 @@ const TotalRevenue = () => {
         Total Revenue
       </Typography>
       <Stack my='20px' direction='row' gap={4} flexWrap='wrap'>
-        <Typography fontSize={28} fontWeight={700} color='#AADB1E' fontFamily='Manrope'>
+        <Typography fontSize={28} fontWeight={700} color='#FCC25D' fontFamily='Manrope'>
           $371,946
         </Typography>
         <Stack direction='row' alignItems='center' gap={1}>
