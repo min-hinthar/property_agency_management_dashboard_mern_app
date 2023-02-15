@@ -13,9 +13,10 @@ import {
 const home = () => {
   return (
     <Box>
-      <Typography fontSize={25} fontWeight={700} fontFamily='Roboto'>
+      <Typography fontSize={25} fontWeight={700} fontFamily='Manrope'>
         Dashboard
       </Typography>
+  {/* Pie Charts */}
       <Box mt='20px' display='flex' flexWrap='wrap' gap={4} color='ivory'>
         <PieChart 
           title='Properties for Sale'
@@ -42,6 +43,11 @@ const home = () => {
           colors={[ '#475BE8', '#07682B']}
         />
       </Box>
+  {/* Total Revenue & Property Referrals */}
+      <Stack mt='25px' width='100%' direction={{ xs: 'column', lg: 'row'}}>
+        <TotalRevenue />
+        <PropertyReferrals />
+      </Stack>
     </Box>
   )
 }
