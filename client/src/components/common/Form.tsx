@@ -137,7 +137,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
                   Property Photo
                 </Typography>
 
-                <Button component='label' sx={{ width: 'fit-content', fontSize: 16, color: '#2ED480'}}>
+                <Button component='label' sx={{ width: 'fit-content', fontSize: 16, color: '#2ED480', background: '#310438'}}>
                   Upload *
                   <input 
                     hidden
