@@ -13,33 +13,33 @@ import {
 const home = () => {
   return (
     <Box>
-      <Typography fontSize={25} fontWeight={700}>
+      <Typography fontSize={25} fontWeight={700} fontFamily='Roboto'>
         Dashboard
       </Typography>
-      <Box mt='20px' display='flex' flexWrap='wrap' gap={4}>
+      <Box mt='20px' display='flex' flexWrap='wrap' gap={4} color='ivory'>
         <PieChart 
           title='Properties for Sale'
           value={684}
-          series={[75, 25]}
-          colors={[ '#475BE8', '#E4E8EF']}
+          series={[35, 65]}
+          colors={[ '#475BE8', '#C7Af0E']}
         />
         <PieChart 
           title='Properties for Rent'
           value={550}
           series={[60, 40]}
-          colors={[ '#475AE8', '#E4B8EF']}
+          colors={[ '#475AE8', '#800919']}
         />
         <PieChart 
           title='Total Customers'
           value={5602}
           series={[75, 25]}
-          colors={[ '#275BE8', '#C4E8EF']}
+          colors={[ '#275BE8', '#700980']}
         />
         <PieChart 
-          title='Total for Cities'
+          title='Total Cities'
           value={556}
-          series={[75, 25]}
-          colors={[ '#475BE8', '#E4E8EF']}
+          series={[10, 90]}
+          colors={[ '#475BE8', '#07682B']}
         />
       </Box>
     </Box>
