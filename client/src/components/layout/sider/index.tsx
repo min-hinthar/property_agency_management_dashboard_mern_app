@@ -235,11 +235,12 @@ export const Sider: typeof DefaultSider = ({ render }) => {
           sx={{
             pl: 2,
             py: 1,
+            backgroundColor: "#fff",
             "&.Mui-selected": {
               "&:hover": {
-                backgroundColor: "transparent",
+                backgroundColor: "#ccc",
               },
-              backgroundColor: "transparent",
+              backgroundColor: "#fff",
             },
             justifyContent: "center",
           }}
@@ -259,7 +260,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
             primary={translate("dashboard.title", "Dashboard")}
             primaryTypographyProps={{
               noWrap: true,
-              fontSize: "16px",
+              fontSize: "20px",
               fontWeight: selectedKey === "/" ? "bold" : "normal",
               color: "#310438",
             }}
