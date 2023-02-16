@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
     res.send({ message: 'Connected to Morning Star'});
 })
 
-app.use('/api/v1/user', userRouter);
+app.use('/api/v1/users', userRouter);
 app.use('/api/v1/properties', propertyRouter);
 
 const startServer = async () => {
