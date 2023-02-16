@@ -1,30 +1,15 @@
-import Property from '../mongodb/models/property.js';
-import User from '../mongodb/models/user.js';
+import express from 'express';
 
-const getAllProperties = async (req, res) => {
+import {
+    createProperty, deleteProperty, getAllProperties, getPropertyDetails, updateProperty
+} from '../controllers/property.controller.js';
 
-};
+const router = express.Router();
 
-const getPropertyDetails = async (req, res) => {
-    
-};
+router.route('/').get(getAllProperties);
+router.route('/:id').get(getPropertyDetails);
+router.route('/').post(createProperty);
+router.route('/:id').patch(updateProperty);
+router.route('/:id').delete(deleteProperty);
 
-const createProperty = async (req, res) => {
-
-};
-
-const updateProperty = async (req, res) => {
-
-};
-
-const deleteProperty = async (req, res) => {
-
-};
-
-export {
-    getAllProperties,
-    getPropertyDetails,
-    createProperty,
-    updateProperty,
-    deleteProperty
-};
+export default router;
