@@ -17,7 +17,6 @@ const PropertyCard = ({ id, title, location, price, photo }: PropertyCardProps) 
         },
         bgcolor: '#AE0032',
         cursor: 'pointer',
-        textDecoration: 'none'
       }}
     >
       <CardMedia 
