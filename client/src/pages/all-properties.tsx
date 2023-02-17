@@ -4,6 +4,7 @@ import { Box, Stack, TextField, Typography, Select, MenuItem } from "@pankod/ref
 import { useNavigate } from "@pankod/refine-react-router-v6";
 
 import { PropertyCard, CustomButton } from "components";
+import { useMemo } from "react";
 
 const AllProperties = () => {
 
@@ -29,6 +30,14 @@ const AllProperties = () => {
     setSorter([{ field, order: currentPrice === 'asc' ? 'desc' : 'asc'  }])
   }
 
+  const currentFilterValues = useMemo(() => {
+    const logicalFilters = filters.flatMap((item) => ('field' in item ? item: []))
+
+    return {
+      title: logicalFilters.find((item) => item.field === 'title')?.value || '',
+    }
+  }, [filters])
+
   if(isLoading) return <Typography>Loading All Properties...</Typography>
   if(isError) return <Typography>Error Loading Properties...</Typography>
 
@@ -52,8 +61,16 @@ const AllProperties = () => {
                 variant="outlined"
                 color='info'
                 placeholder="Search by title"
-                value='' 
-                onChange={() => {}}
+                value={currentFilterValues.title}
+                onChange={(e) => {
+                  setFilters([
+                    {
+                      field: 'title',
+                      operator: 'contains',
+                      value: e.currentTarget.value ? e.currentTarget.value : undefined
+                    }
+                  ])
+                }}
               />
               <Select
                 variant="outlined"
@@ -127,7 +144,6 @@ const AllProperties = () => {
               'aria-label' : 'Without label'
             }}
             defaultValue={10}
-            value=''
             onChange={() => {}}
           >
             {[10, 20, 30, 40, 50].map((size) => (
