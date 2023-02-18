@@ -23,7 +23,7 @@ const AgentCard = ({ id, name, email, avatar, noOfProperties }: AgentCardProp) =
     if(currentUser.email === email) {
       return '/my-profile'
     } else {
-      return `agent/show/${id}`
+      return `/agents/show/${id}`
     }
   }
 
