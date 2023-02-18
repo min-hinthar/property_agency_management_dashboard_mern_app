@@ -19,6 +19,26 @@ const Agents = () => {
       <Typography fontSize={25} fontWeight={700}>
         Agents List
       </Typography>
+      <Box
+        mt='20px'
+        sx={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: '20px',
+          backgroundColor: '#AE0032'
+        }}
+      >
+        {allAgents.map((agent) => (
+          <AgentCard 
+            key={agent._id}
+            id={agent._id}
+            name={agent.name}
+            email={agent.email}
+            avatar={agent.avatar}
+            noOfProperties={agent.allProperties.length}
+          />
+        ))}
+      </Box>
     </Box>
   )
 }
