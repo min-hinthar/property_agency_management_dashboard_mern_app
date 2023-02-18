@@ -25,7 +25,7 @@ const Agents = () => {
           display: 'flex',
           flexWrap: 'wrap',
           gap: '20px',
-          backgroundColor: '#AE0032'
+          backgroundColor: '#AE0032',
         }}
       >
         {allAgents.map((agent) => (
