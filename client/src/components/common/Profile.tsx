@@ -12,11 +12,11 @@ function checkImage(url: any) {
 
 const Profile = ({ type, name, avatar, email, properties }: ProfileProps) => (
     <Box>
-        <Typography fontSize={25} fontWeight={700} color="#11142D">
+        <Typography fontSize={25} fontWeight={700}>
             {type} Profile
         </Typography>
 
-        <Box mt="20px" borderRadius="15px" padding="20px" bgcolor="#FCFCFC">
+        <Box mt="20px" borderRadius="15px" padding="20px" bgcolor="#006b87">
             <Box
                 sx={{
                     display: "flex",
@@ -25,11 +25,12 @@ const Profile = ({ type, name, avatar, email, properties }: ProfileProps) => (
                 }}
             >
                 <img
-                    src="https://wallpaperaccess.com/full/3921996.jpg"
+                    src="https://1.bp.blogspot.com/-LIRC12Ji9bE/YKcFA67ewbI/AAAAAAAA7pc/tZz1Ab7Y56EmOWROsvyAksQgWqK7SUijACLcBGAsYHQ/s1024/25exterior.jpg"
                     width={340}
                     height={320}
                     alt="abstract"
                     className="my_profile-bg"
+                    style={{ borderRadius: 8, objectFit: 'cover'}}
                 />
                 <Box
                     flex={1}
@@ -67,11 +68,11 @@ const Profile = ({ type, name, avatar, email, properties }: ProfileProps) => (
                                 <Typography
                                     fontSize={22}
                                     fontWeight={600}
-                                    color="#11142D"
+                                    color="ivory"
                                 >
                                     {name}
                                 </Typography>
-                                <Typography fontSize={16} color="#808191">
+                                <Typography fontSize={16} color="yellow">
                                     Private Real-Estate Agent
                                 </Typography>
                             </Stack>
@@ -81,7 +82,7 @@ const Profile = ({ type, name, avatar, email, properties }: ProfileProps) => (
                                     <Typography
                                         fontSize={14}
                                         fontWeight={500}
-                                        color="#808191"
+                                        color="ivory"
                                     >
                                         Address
                                     </Typography>
@@ -91,10 +92,10 @@ const Profile = ({ type, name, avatar, email, properties }: ProfileProps) => (
                                         alignItems="center"
                                         gap="10px"
                                     >
-                                        <Place sx={{ color: "#11142D" }} />
+                                        <Place sx={{ color: "yellow" }} />
                                         <Typography
                                             fontSize={14}
-                                            color="#11142D"
+                                            color="ivory"
                                         >
                                           Southern California
                                         </Typography>
@@ -111,7 +112,7 @@ const Profile = ({ type, name, avatar, email, properties }: ProfileProps) => (
                                         <Typography
                                             fontSize={14}
                                             fontWeight={500}
-                                            color="#808191"
+                                            color="ivory"
                                         >
                                             Phone Number
                                         </Typography>
@@ -121,10 +122,10 @@ const Profile = ({ type, name, avatar, email, properties }: ProfileProps) => (
                                             alignItems="center"
                                             gap="10px"
                                         >
-                                            <Phone sx={{ color: "#11142D" }} />
+                                            <Phone sx={{ color: "yellow" }} />
                                             <Typography
                                                 fontSize={14}
-                                                color="#11142D"
+                                                color="ivory"
                                                 noWrap
                                             >
                                               (626)510-2019
@@ -136,7 +137,7 @@ const Profile = ({ type, name, avatar, email, properties }: ProfileProps) => (
                                         <Typography
                                             fontSize={14}
                                             fontWeight={500}
-                                            color="#808191"
+                                            color="ivory"
                                         >
                                             Email
                                         </Typography>
@@ -146,10 +147,10 @@ const Profile = ({ type, name, avatar, email, properties }: ProfileProps) => (
                                             alignItems="center"
                                             gap="10px"
                                         >
-                                            <Email sx={{ color: "#11142D" }} />
+                                            <Email sx={{ color: "yellow" }} />
                                             <Typography
                                                 fontSize={14}
-                                                color="#11142D"
+                                                color="ivory"
                                             >
                                                 {email}
                                             </Typography>
@@ -164,8 +165,8 @@ const Profile = ({ type, name, avatar, email, properties }: ProfileProps) => (
         </Box>
 
         {properties.length > 0 && (
-            <Box mt={2.5} borderRadius="15px" padding="20px" bgcolor="#FCFCFC">
-                <Typography fontSize={18} fontWeight={600} color="#11142D">
+            <Box mt={2.5} borderRadius="15px" padding="20px" bgcolor="#006b87">
+                <Typography fontSize={22} fontWeight={600} color="ivory">
                     {type} Properties
                 </Typography>
 
