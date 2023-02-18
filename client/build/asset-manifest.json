@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.df0bd558.css",
+    "main.js": "/static/js/main.c03e3a5b.js",
+    "static/js/787.44e022fc.chunk.js": "/static/js/787.44e022fc.chunk.js",
+    "static/media/MorningStar.png": "/static/media/MorningStar.f06b29182dabc2a529e8.png",
+    "index.html": "/index.html",
+    "static/media/mandalay.svg": "/static/media/mandalay.a6a34862e42881a08befb93af7917ff5.svg",
+    "main.df0bd558.css.map": "/static/css/main.df0bd558.css.map",
+    "main.c03e3a5b.js.map": "/static/js/main.c03e3a5b.js.map",
+    "787.44e022fc.chunk.js.map": "/static/js/787.44e022fc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df0bd558.css",
+    "static/js/main.c03e3a5b.js"
+  ]
+}
