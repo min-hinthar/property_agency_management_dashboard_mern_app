@@ -1,7 +1,8 @@
-# Project Title: [ Property Agency Management Dashboard MERN App ]
+# Project Title: [ Property Agency Management Dashboard Refine-MERN App ]
 
-![App Screenshots](./assets/screenshots/1.jpeg)
+Client Deployed on Netlify Live URL: [ https://mandalay-property-refine-dashboard.netlify.app/ ]
 
+Server Deployed on Render: [ https://refine-property-management-dashboard.onrender.com/ ] 
 
 ## Table of Contents
 1. [Description](#description)
@@ -15,7 +16,7 @@
 -----
 
 ### Description 
-The goal of this project is to create a fully functional full-stack MERN Property Agency Management dashboard Refine application that allows property agents to manage their properties, clients, employees, messages, and reviews. The application should have the following features:
+The goal of this project is to create a fully functional full-stack Refine-MERN Property Agency Management dashboard Refine application that allows property agents to manage their properties, clients, employees, messages, and reviews. The application should have the following features:
 
  - Complete CRUD functionalities for properties, clients, employees, messages, and reviews.
 
@@ -35,13 +36,13 @@ The goal of this project is to create a fully functional full-stack MERN Propert
 -----
 
 ### Installation
-React-App Npx, 
+Create Refine-App@Latest Client, 
 
 
 #### Tech-Stacks
-Frontend : Refine, Node JS, Express Js, Mongoose, and MongoDB
+Frontend : Refine, Refine ApexCharts, Material UI, Material UI Data Grid
 
-Backend : Material UI, Material UI Data Grid, Refine Charts, Cloudinary
+Backend : Node JS, Express JS, Mongoose, and MongoDB, Cloudinary
 
 -----
 
@@ -144,5 +145,14 @@ MIT
 
 -----
 
+Client Deployed on Netlify Live URL: [ https://mandalay-property-refine-dashboard.netlify.app/ ]
 
+Server Deployed on Render: [ https://refine-property-management-dashboard.onrender.com/ ] 
 
+![App Screenshots](./client/src/assets/Property_1.jpeg)
+![App Screenshots](./client/src/assets/Property_2.jpeg)
+![App Screenshots](./client/src/assets/Property_3.jpeg)
+![App Screenshots](./client/src/assets/Property_4.jpeg)
+![App Screenshots](./client/src/assets/Property_6.jpeg)
+![App Screenshots](./client/src/assets/Property_7.jpeg)
+![App Screenshots](./client/src/assets/Property_5.jpeg)
