@@ -1,4 +1,4 @@
-import { useList } from "@pankod/refine-core/dist/hooks";
+import { useList } from "@pankod/refine-core";
 import { Typography, Box, Stack } from "@pankod/refine-mui";
 
 import {
@@ -8,9 +8,29 @@ import {
   PropertyCard,
   TopAgent
 } from 'components';
+import { config } from "process";
 
 
-const home = () => {
+const Home = () => {
+  
+  const { data, isLoading, isError } = useList({
+    resource: 'properties',
+    config: {
+      pagination: {
+        pageSize: 10
+      }
+    }
+  })
+  
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+  
+  if (isError) {
+      return <div>Something went wrong!</div>;
+  }
+  const latestProperties = data?.data ?? [];
+
   return (
     <Box>
       <Typography fontSize={25} fontWeight={700} fontFamily='Manrope'>
@@ -48,8 +68,34 @@ const home = () => {
         <TotalRevenue />
         <PropertyReferrals />
       </Stack>
+      <Box
+        flex={1}
+        borderRadius='15px'
+        padding='20px'
+        bgcolor='#006b87'
+        display='flex'
+        flexDirection='column'
+        minWidth='100%'
+        mt='25px'
+      >
+        <Typography fontSize={22} fontWeight={600} color='ivory'>
+          Latest Properties Listings:
+        </Typography>
+        <Box mt={2.5} sx={{ display: 'flex', flexWrap: 'wrap', gap: 4}} justifyContent='space-between' alignItems='center' padding={5}>
+          {latestProperties.slice(0).reverse().map((property) => (
+            <PropertyCard 
+              key={property._id} 
+              id={property._id}
+              title={property.title}
+              location={property.location}
+              price={property.price}
+              photo={property.photo}
+            />
+          ))}
+        </Box>
+      </Box>
     </Box>
   )
 }
 
-export default home
+export default Home
